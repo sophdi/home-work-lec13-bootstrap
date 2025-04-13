@@ -55,6 +55,7 @@ body {
   display: inline-flex;
   align-items: center;
   margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
 }
 
 .fashion-aside-link i {
@@ -84,6 +85,10 @@ body {
   border-radius: var(--border-radius-lg);
   overflow: hidden;
   margin-bottom: var(--spacing-md);
+}
+
+.carousel-item {
+  transition: transform 0.5s ease-in-out;
 }
 
 .fashion-form {
@@ -146,6 +151,16 @@ body {
   margin-bottom: var(--spacing-lg);
 }
 
+@media (max-width: 991px) {
+  aside.col-md-4 {
+    margin-bottom: 2rem;
+  }
+  
+  .fashion-aside-link {
+    margin-bottom: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .fashion-form {
     padding: var(--spacing-md);
@@ -153,5 +168,16 @@ body {
   
   .fashion-sidebar {
     padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 576px) {
+  .fashion-form .d-flex {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .fashion-form .btn {
+    width: 100%;
   }
 }
